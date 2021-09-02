@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Registro de Productos"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        android:textSize="30sp"
+        android:textColor="@color/black"
+        />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="130sp"
+                android:src="@drawable/fg"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/d1"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20sp"
+                android:textColor="@color/black"
+                />
+
+            <EditText
+                android:id="@+id/txtcod"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="280sp"
+                android:layout_marginLeft="20sp"
+                android:inputType="number"
+                android:drawableLeft="@drawable/ic_codigo"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/d2"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20sp"
+                android:textColor="@color/black"/>
+
+            <EditText
+                android:id="@+id/txtdes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="100sp"
+                android:inputType="text"
+                android:layout_marginLeft="20sp"
+                android:drawableLeft="@drawable/ic_descripcion"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/d3"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20sp"
+                android:textColor="@color/black"/>
+
+            <EditText
+                android:id="@+id/txtprec"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="280sp"
+                android:layout_marginLeft="20sp"
+                android:inputType="numberDecimal"
+                android:drawableLeft="@drawable/ic_money"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_marginTop="20sp"
+                >
+
+                <Button
+                    android:id="@+id/guardar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Guardar"
+                    android:backgroundTint="@color/purple_200"
+                    android:layout_marginRight="20sp"/>
+
+                <Button
+                    android:id="@+id/consultaCod"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Consulta por còdigo"
+                    android:backgroundTint="@color/black"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center">
+
+                <Button
+                    android:id="@+id/consultaDesc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Consulta descripciòn"
+                    android:backgroundTint="@color/black"
+                    android:layout_marginRight="20sp"
+                    />
+
+                <Button
+                    android:id="@+id/borrar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Eliminar"
+                    android:backgroundTint="@color/purple_200"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                >
+
+                <Button
+                    android:id="@+id/modificar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Modificaciòn"
+                    android:backgroundTint="@color/purple_200"
+                    android:layout_marginRight="20sp"/>
+
+                <Button
+                    android:id="@+id/salir"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Salir"
+                    android:backgroundTint="@color/black"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.appcompat.widget.LinearLayoutCompat>
